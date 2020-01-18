@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_margin="10px"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <net.colindodd.gradientlayout.GradientRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="100dp"
+        android:id="@+id/gradientColor"
+        gl:start_color="@color/gradientLightYellow"
+        gl:end_color="@color/gradientOrange"
+        gl:orientation="LEFT_RIGHT"
+        android:padding="10dp">
+
+    <ImageView
+        android:maxHeight="90dp"
+        android:src="@drawable/home_ic_maths"
+        android:id="@+id/imageSubject"
+        style="@style/homeCardImage"/>
+
+    <TextView
+        android:text="Maths"
+        android:id="@+id/txtSubjectname"
+        style="@style/viewParent.headerText.HomeCardTitle" />
+
+    </net.colindodd.gradientlayout.GradientRelativeLayout>
+    </android.support.v7.widget.CardView>
